@@ -10,6 +10,8 @@ import {
   initialState,
 } from "../state/ProductState/productReducer";
 
+const PRODUCT_CONTEXT = createContext();
+
 const ProductProvider = ({ children }) => {
   const [state, dispatch] = useReducer(productReducer, initialState);
 
