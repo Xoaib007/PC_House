@@ -18,7 +18,7 @@ const ProductProvider = ({ children }) => {
   console.log(state);
 
   useEffect(() => {
-    // dispatch({ type: actionTypes.FETCHING_START });
+    dispatch({ type: actionTypes.FETCHING_START });
     fetch("http://localhost:5000/products")
       .then((res) => res.json())
       .then((data) =>
